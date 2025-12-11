@@ -2,11 +2,11 @@
 class Footer {
   render() {
     const currentYear = new Date().getFullYear();
-    
+
     const footerHTML = `
       <footer>
         <div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;">
-          <div>© ${currentYear} Frontier-A1-VL Team</div>
+          <div>© ${currentYear} TermiBrain0-VL Team</div>
           <div class="row">
             <a href="#">Contact Us</a>
           </div>
@@ -20,7 +20,7 @@ class Footer {
 }
 
 // 自动初始化页脚
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const footer = new Footer();
   footer.render();
 });

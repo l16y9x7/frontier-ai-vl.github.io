@@ -8,7 +8,7 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-  <title>Frontier-A1-VL — Result</title>
+  <title>TermiBrain0-VL — Result</title>
   <script src="./echarts.min.js?v=1.0.0"></script>
   <link rel="stylesheet" href="./common.css?v=1.0.0">
   <script src="./navbar.js?v=1.0.0"></script>
@@ -22,7 +22,7 @@
 <body>
   <!-- Result -->
 <section id="result">
-  <div class="container">
+  <div class="container" style="max-width: 1600px;">
     <div style="text-align: center; margin-bottom: 60px;">
       <h2 style="color: var(--primary-red); font-size: clamp(2rem, 5vw, 3rem); font-weight: 700;">Result</h2>
     </div>
@@ -40,226 +40,198 @@
         <table style="min-width: 1200px; width: 100%; table-layout: auto; white-space: nowrap; border-collapse: collapse; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
           <thead>
             <tr>
-              <th style="padding: 12px; text-align: center; border-bottom: 2px solid var(--border); white-space: nowrap; min-width: 120px; background: #f8fafc;">Model</th>
-              <th style="padding: 12px; text-align: center; border-bottom: 2px solid var(--border); white-space: nowrap; min-width: 100px; background: #f8fafc;">MEGA-Bench</th>
-              <th style="padding: 12px; text-align: center; border-bottom: 2px solid var(--border); white-space: nowrap; min-width: 100px; background: #f8fafc;">MVBench</th>
-              <th style="padding: 12px; text-align: center; border-bottom: 2px solid var(--border); white-space: nowrap; min-width: 100px; background: #f8fafc;">TextVQA</th>
-              <th style="padding: 12px; text-align: center; border-bottom: 2px solid var(--border); white-space: nowrap; min-width: 120px; background: #f8fafc;">VCR-EN-Easy</th>
-              <th style="padding: 12px; text-align: center; border-bottom: 2px solid var(--border); white-space: nowrap; min-width: 120px; background: #f8fafc;">MATH-Vision</th>
-              <th style="padding: 12px; text-align: center; border-bottom: 2px solid var(--border); white-space: nowrap; min-width: 100px; background: #f8fafc;">MMBench</th>
-              <th style="padding: 12px; text-align: center; border-bottom: 2px solid var(--border); white-space: nowrap; min-width: 100px; background: #f8fafc;">VideoMME</th>
-              <th style="padding: 12px; text-align: center; border-bottom: 2px solid var(--border); white-space: nowrap; min-width: 100px; background: #f8fafc;">ChartQA</th>
-              <th style="padding: 12px; text-align: center; border-bottom: 2px solid var(--border); white-space: nowrap; min-width: 100px; background: #f8fafc;">DocVQA</th>
-              <th style="padding: 12px; text-align: center; border-bottom: 2px solid var(--border); white-space: nowrap; min-width: 100px; background: #f8fafc;">OCRBench</th>
-              <th style="padding: 12px; text-align: center; border-bottom: 2px solid var(--border); white-space: nowrap; min-width: 100px; background: #f8fafc;">MMMU</th>
-              <th style="padding: 12px; text-align: center; border-bottom: 2px solid var(--border); white-space: nowrap; min-width: 120px; background: #f8fafc;">MathVista</th>
-              <th style="padding: 12px; text-align: center; border-bottom: 2px solid var(--border); white-space: nowrap; min-width: 100px; background: #f8fafc;">MMVet</th>
-              <th style="padding: 12px; text-align: center; border-bottom: 2px solid var(--border); white-space: nowrap; min-width: 120px; background: #f8fafc;">MMSI-Bench</th>
-              <th style="padding: 12px; text-align: center; border-bottom: 2px solid var(--border); white-space: nowrap; min-width: 100px; background: #f8fafc;">VSI-Bench</th>
-              <th style="padding: 12px; text-align: center; border-bottom: 2px solid var(--border); white-space: nowrap; min-width: 100px; background: #f8fafc;">ERQA</th>
-              <th style="padding: 12px; text-align: center; border-bottom: 2px solid var(--border); white-space: nowrap; min-width: 100px; background: #f8fafc; color: red;">Average Score</th>
+              <th style="padding: 12px; text-align: center; border-bottom: 2px solid var(--border); white-space: nowrap; min-width: 80px; background: #f8fafc;">Model</th>
+              <th style="padding: 12px; text-align: center; border-bottom: 2px solid var(--border); white-space: nowrap; min-width: 80px; background: #f8fafc;">Point-Bench Normalized</th>
+              <th style="padding: 12px; text-align: center; border-bottom: 2px solid var(--border); white-space: nowrap; min-width: 80px; background: #f8fafc;">RefSpatial</th>
+              <th style="padding: 12px; text-align: center; border-bottom: 2px solid var(--border); white-space: nowrap; min-width: 80px; background: #f8fafc;">RoboSpatial VQA + Pointing</th>
+              <th style="padding: 12px; text-align: center; border-bottom: 2px solid var(--border); white-space: nowrap; min-width: 80px; background: #f8fafc;">pixmo</th>
+              <th style="padding: 12px; text-align: center; border-bottom: 2px solid var(--border); white-space: nowrap; min-width: 80px; background: #f8fafc;">where2place</th>
             </tr>
           </thead>
           <tbody>
             <tr style="border-bottom: 1px solid #f3f4f6;">
-              <td style="padding: 12px; text-align: center; white-space: nowrap; color: var(--primary-red);">Frontier-A1-VL(AR SFT v2)</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">33</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">66.42</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">81.82</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">91.93</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">19.26</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">81.95</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">74.6</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">67.4</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">82</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">44.8</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">46.8</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">63.47</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">61.28</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">29</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">48.61</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">39.75</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">58.26</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">Qwen2.5-VL-3B-Instruct</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">15.58</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">2.89</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">39.36</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">37.22</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">12</td>
             </tr>
             <tr style="border-bottom: 1px solid #f3f4f6;">
-              <td style="padding: 12px; text-align: center; white-space: nowrap; color: var(--primary-red);">Frontier-A1-VL(AR SFT)</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">27.5</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">66.68</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">80.79</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">94.66</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">18.095</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">85.2</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">51.96</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">75</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">81.77</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">43.3</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">43</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">67.6</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">62.80</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">26</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">36.52</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">36.25</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">56</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">x-square-robot/wall-oss-flow</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">14.36</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">5.05</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">0.57</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">6.11</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">1</td>
             </tr>
             <tr style="border-bottom: 1px solid #f3f4f6;">
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">Qwen2.5-VL-7B</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">36.8</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">69.6</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">79.83</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">87.57</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">25.8</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">83</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">61.55</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">70.2</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">94.98</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">44.1</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">58.6</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">65</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">73.07</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">28.1</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">22.77</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">42.5</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">58.97</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">x-square-robot/wall-oss-fast</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">0.2</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">0.36</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">45.69</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">1.85</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">3</td>
             </tr>
             <tr style="border-bottom: 1px solid #f3f4f6;">
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">Qwen2.5-VL-32B</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">45</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">70</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">85.24</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">89.35</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">39.2</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">84.6</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">75</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">86.16</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">96</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">51</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">70</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">73</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">75.23</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">28.9</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">24.5</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">42.25</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">64.71</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #f3f4f6;">
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">FUDOKI-1.5B (step 128)</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">25</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">Qwen2.5-VL-7B-Instruct</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">31.06</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">5.78</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">35.92</td>
               <td style="padding: 12px; text-align: center; white-space: nowrap;">50</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">5</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #f3f4f6;">
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">Qwen/Qwen3-VL-4B-Instruct</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">67.92</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">45.85</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">65.23</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">76.85</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">65</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #f3f4f6;">
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">Qwen3-VL-4B-Instruct_sft_4000</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">54.48</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">48.01</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">56.9</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">0</td>
               <td style="padding: 12px; text-align: center; white-space: nowrap;">56</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #f3f4f6;">
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">Qwen3-VL-4B-Instruct_sft_6000</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">52.95</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">46.57</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">54.31</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">0</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">58</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #f3f4f6;">
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">Qwen3-VL-4B-Instruct_sft_8000</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">54.48</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">48.74</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">57.18</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">0</td>
               <td style="padding: 12px; text-align: center; white-space: nowrap;">60</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">18</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">70</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">54</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">64</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #f3f4f6;">
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">Qwen3-VL-4B-Instruct_sft_10000</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">54.28</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">45.49</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">56.9</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">0</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">57</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #f3f4f6;">
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">Qwen3-VL-4B-Instruct_sft_10097</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">54.28</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">46.21</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">56.9</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">0</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">58</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #f3f4f6;">
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">Qwen/Qwen3-VL-4B-Thinking</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">66.4</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">37.18</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">53.74</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">75.74</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">47</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #f3f4f6;">
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">Qwen/Qwen3-VL-8B-Instruct</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">65.07</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">44.39</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">65.23</td>
               <td style="padding: 12px; text-align: center; white-space: nowrap;">80</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">30</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">34.3</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">45</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">38</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">31</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">24.5</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">33</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">44.55</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">65</td>
             </tr>
             <tr style="border-bottom: 1px solid #f3f4f6;">
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">BAGEL-7B-MOT</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">34</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">Qwen/Qwen3-VL-8B-Thinking</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">62.22</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">37.18</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">45.4</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">75.74</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">48</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #f3f4f6;">
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">InternVL3_5-2B</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">17.52</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">4.33</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">35.63</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">22.04</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">0</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #f3f4f6;">
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">InternVL3_5-4B</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">43.18</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">22.38</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">44.25</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">43.33</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">24</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #f3f4f6;">
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">microsoft/Phi-4-multimodal-instruct</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">5.19</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">1.44</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">29.89</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">14.07</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">1</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #f3f4f6;">
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">Zhoues/RoboRefer-2B-SFT</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">47.05</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">44.04</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">62.93</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">0</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">65</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #f3f4f6;">
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">RoboRefer-2B-SFT_base</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">0</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">0</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">27.59</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">0</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">0</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #f3f4f6;">
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">RoboRefer-2B-SFT_self</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">41.55</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">36.82</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">59.77</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">0</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">59</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #f3f4f6;">
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">RoboRefer-2B-SFT_self_noDepth</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">0</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">39.71</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">66.09</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">0</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">57</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #f3f4f6;">
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">Zhoues/RoboRefer-8B-SFT</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">55.91</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">58.12</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">61.21</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">0</td>
               <td style="padding: 12px; text-align: center; white-space: nowrap;">69</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">79</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">86</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">25</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">79.2</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">65</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">76</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">92</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">46</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">43.2</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">63.4</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">48.2</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">30.6</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">26.38</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">43.75</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">56.67</td>
             </tr>
             <tr style="border-bottom: 1px solid #f3f4f6;">
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">InternVL3-9B</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">38</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">74.3</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">79.4</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">94.2</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">27.6</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">86.5</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">68.9</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">86.2</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">93.6</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">42</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">65.6</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">75.2</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">76.2</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">29</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">25</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">50</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">63.23</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">openbmb/MiniCPM-V-4_5</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">4.89</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">1.81</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">45.11</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">23.33</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">5</td>
             </tr>
             <tr style="border-bottom: 1px solid #f3f4f6;">
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">GLM-4.1V-9B-Thking</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">40</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">75</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">83</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">94</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">28</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">85.2</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">73.6</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">87</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">95</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">45.8</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">68</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">80.7</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">76</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">30</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">14.06</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">40.5</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">63.49</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #f3f4f6;">
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">Cosmos-Reason1-7B</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">37</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">67.22</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">84.6</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">83.44</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">36.67</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">80.06</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">65</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">75.8</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">93.95</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">45.1</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">45.33</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">65.2</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">62</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">15.9</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">35.7</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">38.8</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">61.79</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #f3f4f6;">
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">Gemini-2.5-Pro</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">64.66</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">72</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">73.4</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">86.2</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">25.3</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">94</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">84.8</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">76.88</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">92.5</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">56.2</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">81.7</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">84.6</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">75.6</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">36.9</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">44.66</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">61.5</td>
-              <td style="padding: 12px; text-align: center; white-space: nowrap;">69.43</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">allenai/Molmule-7B-D-0924</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">60.9</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">40.43</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">25.86</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">86.48</td>
+              <td style="padding: 12px; text-align: center; white-space: nowrap;">15</td>
             </tr>
           </tbody>
         </table>
@@ -268,26 +240,33 @@
 
           <!-- Model Performance Radar Subsection -->
           <div style="margin-bottom: 40px;">
-            <h3 style="text-align: center; margin: 0 0 30px 0; color: var(--primary-red);">📈 Model Performance Radar</h3>
+            <h3 style="text-align: center; margin: 0 0 30px 0; color: var(--primary-red);">📈Open Source Model Performance Radar</h3>
             <div style="width: 100%; margin: 0 auto;">
-              <div id="radar-chart" style="width: 100%; height: 500px; margin: 0 auto;"></div>
+              <div id="radar-chart" style="width: 100%; height: 550px; margin: 0 auto;"></div>
             </div>
-            <!-- Model Performance Radar 结论 -->
-            <div style="margin-top: 20px; padding: 20px; background: #f8fafc; border-radius: 8px; border-left: 4px solid var(--primary-red);">
+            <div style="margin: 40px 0;">
+              <div style="width: 100%; height: 2px; background: linear-gradient(to right, transparent, #e3b4b4 20%, #b91c1c 80%, transparent); margin: 0 auto; border-radius: 3px;"></div>
+            </div>
+            <div style="width: 100%; margin: 0 auto;">
+              <h3 style="text-align: center; margin: 0 0 30px 0; color: var(--primary-red);">📈Competitor Model Performance Radar</h3>
+              <div id="competitor-chart" style="width: 100%; height: 550px; margin: 0 auto;"></div>
+            </div>
+            <!-- Model Performance Radar 结论 TODO:结论注释掉 -->
+            <!-- <div style="margin-top: 20px; padding: 20px; background: #f8fafc; border-radius: 8px; border-left: 4px solid var(--primary-red);">
               <h5 style="color: #1f2937; margin-bottom: 12px; font-size: 16px;">📊 Key Findings</h5>
               <ul style="padding-left: 20px; line-height: 1.8; color: var(--muted);">
                 <li>Among open-source models, Qwen2.5-VL-32B achieves the best performance across all benchmarks.</li>
                 <li>Cosmos-Reason1-7B outperforms Qwen2.5-VL-7B on spatial reasoning benchmark VSI-Bench and mathematical reasoning benchmark MATH-Vision, likely due to its specialized training enhancements for reasoning capabilities. However, Cosmos-Reason1-7B shows lower performance than Qwen2.5-VL-7B on some general capability benchmarks (e.g., MMMU).</li>
-                <li>Frontier-A1-VL(AR SFT v2) demonstrates significantly better performance than Qwen2.5-VL-7B on the VSI-Bench dataset, attributed to the inclusion of industry-specific reasoning datasets in our training data.</li>
+                <li>TermiBrain0-VL(AR SFT v2) demonstrates significantly better performance than Qwen2.5-VL-7B on the VSI-Bench dataset, attributed to the inclusion of industry-specific reasoning datasets in our training data.</li>
               </ul>
-            </div>
+            </div> -->
           </div>
         </div>
 
         <!-- Separator -->
         <div style="margin: 60px 0; text-align: center;">
           <div style="width: 100%; height: 2px; background: linear-gradient(to right, transparent, #e5e7eb 20%, #e5e7eb 80%, transparent); margin: 0 auto;"></div>
-          <div style="margin-top: 40px; color: var(--primary-red); font-size: 24px; font-weight: 600;">行业场景评测结果</div>
+          <div style="margin-top: 40px; color: var(--primary-red); font-size: 24px; font-weight: 600;">通用场景评测结果</div>
         </div>
 
         <!-- Industry Scene Evaluation Section -->
@@ -336,7 +315,7 @@
               </thead>
               <tbody>
                 <tr style="border-bottom: 1px solid #f3f4f6;">
-                  <td style="padding: 12px; text-align: center; white-space: nowrap; color: var(--primary-red); border-right: 1px solid var(--border);">Frontier-A1-VL(AR Agent)</td>
+                  <td style="padding: 12px; text-align: center; white-space: nowrap; color: var(--primary-red); border-right: 1px solid var(--border);">TermiBrain0-VL(AR Agent)</td>
                   <!-- 交管场景数据 (14列) -->
                   <td style="padding: 12px; text-align: center; white-space: nowrap; color: #000000; border-right: 1px solid #e5e7eb;">72.60</td>
                   <td style="padding: 12px; text-align: center; white-space: nowrap; color: #000000; border-right: 1px solid #e5e7eb;">72.60</td>
@@ -366,7 +345,7 @@
                   <td style="padding: 12px; text-align: center; white-space: nowrap;">79.8</td>
                 </tr>
                 <tr style="border-bottom: 1px solid #f3f4f6;">
-                  <td style="padding: 12px; text-align: center; white-space: nowrap; color: var(--primary-red); border-right: 1px solid var(--border);">Frontier-A1-VL(AR SFT v3)</td>
+                  <td style="padding: 12px; text-align: center; white-space: nowrap; color: var(--primary-red); border-right: 1px solid var(--border);">TermiBrain0-VL(AR SFT v3)</td>
                   <!-- 交管场景数据 (14列) -->
                   <td style="padding: 12px; text-align: center; white-space: nowrap; color: #000000; border-right: 1px solid #e5e7eb;">24.21</td>
                   <td style="padding: 12px; text-align: center; white-space: nowrap; color: #000000; border-right: 1px solid #e5e7eb;">38.17</td>
@@ -396,7 +375,7 @@
                   <td style="padding: 12px; text-align: center; white-space: nowrap;">39.47</td>
                 </tr>
                 <tr style="border-bottom: 1px solid #f3f4f6;">
-                  <td style="padding: 12px; text-align: center; white-space: nowrap; color: var(--primary-red); border-right: 1px solid var(--border);">Frontier-A1-VL(AR SFT v2)</td>
+                  <td style="padding: 12px; text-align: center; white-space: nowrap; color: var(--primary-red); border-right: 1px solid var(--border);">TermiBrain0-VL(AR SFT v2)</td>
                   <!-- 交管场景数据 (14列) -->
                   <td style="padding: 12px; text-align: center; white-space: nowrap; color: #000000; border-right: 1px solid #e5e7eb;">24.41</td>
                   <td style="padding: 12px; text-align: center; white-space: nowrap; color: #000000; border-right: 1px solid #e5e7eb;">9.29</td>
@@ -426,7 +405,7 @@
                   <td style="padding: 12px; text-align: center; white-space: nowrap;">33.5</td>
                 </tr>
                 <tr style="border-bottom: 1px solid #f3f4f6;">
-                  <td style="padding: 12px; text-align: center; white-space: nowrap; color: var(--primary-red); border-right: 1px solid var(--border);">Frontier-A1-VL(AR SFT)</td>
+                  <td style="padding: 12px; text-align: center; white-space: nowrap; color: var(--primary-red); border-right: 1px solid var(--border);">TermiBrain0-VL(AR SFT)</td>
                   <!-- 交管场景数据 (14列) -->
                   <td style="padding: 12px; text-align: center; white-space: nowrap; color: #000000; border-right: 1px solid #e5e7eb;">2.43</td>
                   <td style="padding: 12px; text-align: center; white-space: nowrap; color: #000000; border-right: 1px solid #e5e7eb;">1.79</td>
@@ -800,7 +779,7 @@
               </thead>
               <tbody>
                 <tr style="border-bottom: 1px solid #f3f4f6;">
-                  <td style="padding: 12px; text-align: center; white-space: nowrap; color: var(--primary-red); border-right: 1px solid var(--border);">Frontier-A1-VL(AR Agent)</td>
+                  <td style="padding: 12px; text-align: center; white-space: nowrap; color: var(--primary-red); border-right: 1px solid var(--border);">TermiBrain0-VL(AR Agent)</td>
                   <!-- 管线场景数据 -->
                   <td style="padding: 12px; text-align: center; white-space: nowrap; color: #000000; border-right: 1px solid #e5e7eb;">93.93</td>
                   <td style="padding: 12px; text-align: center; white-space: nowrap; color: #000000; border-right: 1px solid #e5e7eb;">32.73</td>
@@ -828,7 +807,7 @@
                   <td style="padding: 12px; text-align: center; white-space: nowrap;">65.48</td>
                 </tr>
                 <tr style="border-bottom: 1px solid #f3f4f6;">
-                  <td style="padding: 12px; text-align: center; white-space: nowrap; color: var(--primary-red); border-right: 1px solid var(--border);">Frontier-A1-VL(AR SFT v2)</td>
+                  <td style="padding: 12px; text-align: center; white-space: nowrap; color: var(--primary-red); border-right: 1px solid var(--border);">TermiBrain0-VL(AR SFT v2)</td>
                   <!-- 管线场景数据 -->
                   <td style="padding: 12px; text-align: center; white-space: nowrap; color: #000000; border-right: 1px solid #e5e7eb;">-</td>
                   <td style="padding: 12px; text-align: center; white-space: nowrap; color: #000000; border-right: 1px solid #e5e7eb;">-</td>
@@ -856,7 +835,7 @@
                   <td style="padding: 12px; text-align: center; white-space: nowrap;">-</td>
                 </tr>
                 <tr style="border-bottom: 1px solid #f3f4f6;">
-                  <td style="padding: 12px; text-align: center; white-space: nowrap; color: var(--primary-red); border-right: 1px solid var(--border);">Frontier-A1-VL(AR SFT)</td>
+                  <td style="padding: 12px; text-align: center; white-space: nowrap; color: var(--primary-red); border-right: 1px solid var(--border);">TermiBrain0-VL(AR SFT)</td>
                   <!-- 管线场景数据 -->
                   <td style="padding: 12px; text-align: center; white-space: nowrap; color: #000000; border-right: 1px solid #e5e7eb;">77.58</td>
                   <td style="padding: 12px; text-align: center; white-space: nowrap; color: #000000; border-right: 1px solid #e5e7eb;">0</td>
@@ -1284,63 +1263,104 @@
     // ----------------------- ECharts Radar Chart -----------------------
     const radarChartData = {
       indicators: [
-        { name: 'MEGA-Bench', max: 70 },
-        { name: 'MVBench', max: 80 },
-        { name: 'TextVQA', max: 90 },
-        { name: 'VCR-EN-Easy', max: 100 },
-        { name: 'MATH-Vision', max: 50 },
-        { name: 'MMBench', max: 100 },
-        { name: 'VideoMME', max: 90 },
-        { name: 'ChartQA', max: 90 },
-        { name: 'DocVQA', max: 100 },
-        { name: 'OCRBench', max: 90 },
-        { name: 'MMMU', max: 85 },
-        { name: 'MathVista', max: 85 },
-        { name: 'MMVet', max: 80 },
-        { name: 'MMSI-Bench', max: 40 },
-        { name: 'VSI-Bench', max: 50 },
-        { name: 'ERQA', max: 65 }
+        { name: 'Point-Bench Normalized', max: 100 },
+        { name: 'RefSpatial', max: 100 },
+        { name: 'RoboSpatial VQA + Pointing', max: 100 },
+        { name: 'pixmo', max: 100 },
+        { name: 'where2place', max: 100 }
       ],
       series: [
         {
-          name: 'Qwen2.5-VL-7B',
-          data: [36.8, 69.6, 79.83, 87.57, 25.8, 83, 61.55, 70.2, 94.98, 44.1, 58.6, 65, 73.07, 28.1, 22.77, 42.5]
+          name: 'Qwen2.5-VL-3B-Instruct',
+          data: [15.58, 2.89, 39.36, 37.22, 12]
         },
         {
-          name: 'Qwen2.5-VL-32B',
-          data: [45, 70, 85.24, 89.35, 39.2, 84.6, 75, 86.16, 96, 51, 70, 73, 75.23, 28.9, 24.5, 42.25]
+          name: 'x-square-robot/wall-oss-flow',
+          data: [14.36, 5.05, 0.57, 6.11, 1]
         },
         {
-          name: 'FUDOKI-1.5B (step 128)',
-          data: [25, 50, 56, 60, 18, 70, 54, 64, 80, 30, 34.3, 45, 38, 31, 24.5, 33]
+          name: 'x-square-robot/wall-oss-fast',
+          data: [0.2, 0.36, 45.69, 1.85, 3]
         },
         {
-          name: 'BAGEL-7B-MOT',
-          data: [34, 69, 79, 86, 25, 79.2, 65, 76, 92, 46, 43.2, 63.4, 48.2, 30.6, 26.38, 43.75]
+          name: 'Qwen2.5-VL-7B-Instruct',
+          data: [31.06, 5.78, 35.92, 50.00, 5.00]
         },
         {
-          name: 'InternVL3-9B',
-          data: [38, 74.3, 79.4, 94.2, 27.6, 86.5, 68.9, 86.2, 93.6, 42, 65.6, 75.2, 76.2, 29, 25, 50]
+          name: 'Qwen/Qwen3-VL-4B-Instruct',
+          data: [67.92, 45.85, 65.23, 76.85, 65]
         },
         {
-          name: 'GLM-4.1V-9B-Thking',
-          data: [40, 75, 83, 94, 28, 85.2, 73.6, 87, 95, 45.8, 68, 45, 76, 30, 14.06, 40.5]
+          name: 'Qwen3-VL-4B-Instruct_sft_4000',
+          data: [54.48, 48.01, 56.90, 0.00, 56.00]
         },
         {
-          name: 'Cosmos-Reason1-7B',
-          data: [37, 67.22, 84.6, 83.44, 36.67, 80.06, 65, 75.8, 93.95, 45.1, 45.33, 65.2, 62, 15.9, 35.7, 38.8]
+          name: 'Qwen3-VL-4B-Instruct_sft_6000',
+          data: [52.95, 46.57, 54.31, 0.00, 58.00]
         },
         {
-          name: 'Gemini-2.5-Pro',
-          data: [64.66, 72, 73.4, 86.2, 25.3, 94, 51, 76.88, 92.5, 56.2, 81.7, 84.6, 75.6, 36.9, 44.66, 61.5]
+          name: 'Qwen3-VL-4B-Instruct_sft_8000',
+          data: [54.48, 48.74, 57.18, 0.00, 60.00]
         },
         {
-          name: 'Frontier-A1-VL(AR SFT)',
-          data: [27.5, 66.68, 80.79, 94.66, 18.095, 85.2, 51.96, 75, 81.77, 43.3, 43, 67.6, 62.80, 26, 36.52, 36.25]
+          name: 'Qwen3-VL-4B-Instruct_sft_10000',
+          data: [54.28, 45.49, 56.90, 0.00, 57.00]
         },
         {
-          name: 'Frontier-A1-VL(AR SFT v2)',
-          data: [33, 66.42, 81.82, 91.93, 19.26, 81.95, 74.6, 67.4, 43.3, 44.8, 46.8, 63.47, 61.28, 29, 48.61, 39.75]
+          name: 'Qwen3-VL-4B-Instruct_sft_10097',
+          data: [54.28, 46.21, 56.90, 0.00, 58.00]
+        },
+        {
+          name: 'Qwen/Qwen3-VL-4B-Thinking',
+          data: [66.40, 37.18, 53.74, 75.74, 47.00]
+        },
+        {
+          name: 'Qwen/Qwen3-VL-8B-Instruct',
+          data: [65.07, 44.39, 65.23, 80.00, 65.00]
+        },
+        {
+          name: 'Qwen/Qwen3-VL-8B-Thinking',
+          data: [62.22, 37.18, 45.40, 75.74, 48.00]
+        },
+        {
+          name: 'InternVL3_5-2B',
+          data: [17.52, 4.33, 35.63, 22.04, 0.00]
+        },
+        {
+          name: 'InternVL3_5-4B',
+          data: [43.18, 22.38, 44.25, 43.33, 24.00]
+        },
+        {
+          name: 'microsoft/Phi-4-multimodal-instruct',
+          data: [5.19, 1.44, 29.89, 14.07, 1.00]
+        },
+        {
+          name: 'Zhoues/RoboRefer-2B-SFT',
+          data: [47.05, 44.04, 62.93, 0.00, 65.00]
+        },
+        {
+          name: 'RoboRefer-2B-SFT_base',
+          data: [0, 0, 27.59, 0, 0]
+        },
+        {
+          name: 'RoboRefer-2B-SFT_self',
+          data: [41.55, 36.82, 59.77, 0.00, 59.00]
+        },
+        {
+          name: 'RoboRefer-2B-SFT_self_noDepth',
+          data: [0, 39.71, 66.09, 0, 57]
+        },
+        {
+          name: 'Zhoues/RoboRefer-8B-SFT',
+          data: [55.91, 58.12, 61.21, 0, 69]
+        },
+        {
+          name: 'openbmb/MiniCPM-V-4_5',
+          data: [4.89, 1.81, 45.11, 23.33, 5.00]
+        },
+        {
+          name: 'allenai/Molmule-7B-D-0924',
+          data: [60.90, 40.43, 25.86, 86.48, 15.00]
         }
       ]
     };
@@ -1357,7 +1377,7 @@
           },
           legend: {
             data: radarChartData.series.map(s => s.name),
-            right: 60,
+            right: 5,
             top: 'middle',
             orient: 'vertical',
             itemGap: 15,
@@ -1368,8 +1388,8 @@
           },
           radar: {
             indicator: radarChartData.indicators,
-            radius: '85%',
-            center: ['40%', '50%'],
+            radius: '90%',
+            center: ['28%', '50%'],
             axisName: {
               color: '#1f2937'
             },
@@ -1398,16 +1418,47 @@
             itemStyle: {
               color: function(params) {
                 const name = params.name;
-                if (name.includes('Qwen2.5-VL-7B')) return '#3b82f6';
-                if (name.includes('Qwen2.5-VL-32B')) return '#dc2626';
-                if (name.includes('FUDOKI-1.5B (step 128)')) return '#8B0000';
-                if (name.includes('BAGEL-7B-MOT')) return '#7c3aed';
-                if (name.includes('InternVL3-9B')) return '#f59e0b';
-                if (name.includes('GLM-4.1V-9B-Thking')) return '#06b6d4';
-                if (name.includes('Cosmos-Reason1-7B')) return '#8b5cf6';
-                if (name.includes('Gemini-2.5-Pro')) return '#ec4899';
-                if (name.includes('Frontier-A1-VL(AR SFT)')) return '#f97316';
-                if (name.includes('Frontier-A1-VL(AR SFT v2)')) return '#0d9488';
+                // 为每个模型分配不同的颜色
+                const colorMap = {
+                  'Qwen2.5-VL-3B-Instruct': '#ef4444', // 红色
+                  'x-square-robot/wall-oss-flow': '#f97316', // 橙色
+                  'x-square-robot/wall-oss-fast': '#fb923c', // 浅橙色
+                  'Qwen2.5-VL-7B-Instruct': '#3b82f6', // 蓝色
+                  'Qwen/Qwen3-VL-4B-Instruct': '#10b981', // 绿色
+                  'Qwen3-VL-4B-Instruct_sft_4000': '#14b8a6', // 青色
+                  'Qwen3-VL-4B-Instruct_sft_6000': '#06b6d4', // 天蓝色
+                  'Qwen3-VL-4B-Instruct_sft_8000': '#0ea5e9', // 亮蓝色
+                  'Qwen3-VL-4B-Instruct_sft_10000': '#2563eb', // 深蓝色
+                  'Qwen3-VL-4B-Instruct_sft_10097': '#6366f1', // 靛蓝色
+                  'Qwen/Qwen3-VL-4B-Thinking': '#8b5cf6', // 紫色
+                  'Qwen/Qwen3-VL-8B-Instruct': '#a855f7', // 紫罗兰色
+                  'Qwen/Qwen3-VL-8B-Thinking': '#d946ef', // 粉紫色
+                  'InternVL3_5-2B': '#ec4899', // 粉红色
+                  'InternVL3_5-4B': '#f43f5e', // 玫瑰色
+                  'microsoft/Phi-4-multimodal-instruct': '#dc2626', // 深红色
+                  'Zhoues/RoboRefer-2B-SFT': '#22c55e', // 亮绿色
+                  'RoboRefer-2B-SFT_base': '#84cc16', // 酸橙绿
+                  'RoboRefer-2B-SFT_self': '#65a30d', // 橄榄绿
+                  'RoboRefer-2B-SFT_self_noDepth': '#ca8a04', // 金黄色
+                  'Zhoues/RoboRefer-8B-SFT': '#eab308', // 黄色
+                  'openbmb/MiniCPM-V-4_5': '#fbbf24', // 浅黄色
+                  'allenai/Molmule-7B-D-0924': '#f59e0b' // 琥珀色
+                };
+                
+                // 精确匹配模型名称
+                if (colorMap[name]) {
+                  return colorMap[name];
+                }
+                
+                // 如果精确匹配失败，尝试部分匹配（按长度降序，优先匹配更长的名称）
+                const sortedKeys = Object.keys(colorMap).sort((a, b) => b.length - a.length);
+                for (const key of sortedKeys) {
+                  if (name === key || name.includes(key)) {
+                    return colorMap[key];
+                  }
+                }
+                
+                // 默认颜色
                 return '#94a3b8';
               }
             }
@@ -1420,6 +1471,120 @@
         window.addEventListener('resize', () => {
       radarChart.resize();
     });
+      }
+
+      // Initialize competitor radar chart
+      const competitorRadarElement = document.getElementById('competitor-chart');
+      if (competitorRadarElement && typeof echarts !== 'undefined') {
+        const competitorRadarChart = echarts.init(competitorRadarElement);
+        
+        // 根据截图数据创建雷达图数据
+        const competitorRadarChartData = {
+          indicators: [
+            { name: 'Point-Bench Normalized', max: 100 },
+            { name: 'RefSpatial', max: 100 },
+            { name: 'RoboSpatial VQA + Pointing', max: 100 },
+            { name: 'pixmo', max: 100 },
+            { name: 'where2place', max: 100 }
+          ],
+          series: [
+            {
+              name: 'x-square-robot/wall-oss-flow',
+              data: [14.36, 5.05, 0.57, 6.11, 1] // 141/982, 14/277, 2/348, 33/540, 1/100
+            },
+            {
+              name: 'x-square-robot/wall-oss-fast',
+              data: [0.20, 0.36, 45.69, 1.85, 3] // 2/982, 1/277, 159/348, 10/540, 3/100
+            },
+            {
+              name: 'Lumo1',
+              data: [0, 51.00, 57.18, 0, 69] // /, 102/200, 199/348, /, 69/100
+            },
+            {
+              name: 'RoboBrain-7B-2.0',
+              data: [0, 32.50, 54.31, 0, 64] // /, 65/200, 189/348, /, 64/100
+            },
+            {
+              name: 'RoboBrain-32B-2.0',
+              data: [0, 54.00, 72.41, 0, 74] // /, 108/200, 252/348, /, 74/100
+            }
+          ]
+        };
+        
+        const competitorRadarOption = {
+          tooltip: {
+            trigger: 'item'
+          },
+          legend: {
+            data: competitorRadarChartData.series.map(s => s.name),
+            right: 250,
+            top: 'middle',
+            orient: 'vertical',
+            itemGap: 15,
+            textStyle: {
+              color: '#1f2937',
+              fontSize: 12
+            }
+          },
+          radar: {
+            indicator: competitorRadarChartData.indicators,
+            radius: '90%',
+            center: ['28%', '50%'],
+            axisName: {
+              color: '#1f2937'
+            },
+            splitLine: {
+              lineStyle: {
+                color: '#e5e7eb'
+              }
+            },
+            splitArea: {
+              show: false
+            }
+          },
+          series: [{
+            name: 'Model Performance',
+            type: 'radar',
+            data: competitorRadarChartData.series.map(series => ({
+              value: series.data,
+              name: series.name
+            })),
+            areaStyle: {
+              opacity: 0.3
+            },
+            lineStyle: {
+              width: 2
+            },
+            itemStyle: {
+              color: function(params) {
+                const name = params.name;
+                // 为每个模型分配不同的颜色
+                const colorMap = {
+                  'x-square-robot/wall-oss-flow': '#f97316', // 橙色
+                  'x-square-robot/wall-oss-fast': '#fb923c', // 浅橙色
+                  'Lumo1': '#3b82f6', // 蓝色
+                  'RoboBrain-7B-2.0': '#10b981', // 绿色
+                  'RoboBrain-32B-2.0': '#6366f1' // 靛蓝色
+                };
+                
+                // 精确匹配模型名称
+                if (colorMap[name]) {
+                  return colorMap[name];
+                }
+                
+                // 默认颜色
+                return '#94a3b8';
+              }
+            }
+          }]
+        };
+        
+        competitorRadarChart.setOption(competitorRadarOption);
+        
+        // Handle window resize
+        window.addEventListener('resize', () => {
+          competitorRadarChart.resize();
+        });
       }
 
       // ----------------------- Traffic BenchMark Pie Charts -----------------------
@@ -1449,7 +1614,7 @@
         
         // Calculate average scores for each category
         const trafficData = {
-          'Frontier-A1-VL(AR Agent)': {
+          'TermiBrain0-VL(AR Agent)': {
             traffic: [72.60, 72.60, 84.6, 91.17, 88.17, 70.76, 86.01, 73.20, 91.32, 64.43, 89.21, 97.50, 79.21], // 13个交管场景
             bridge: [83.10, 58.6515, 56.5816, 49.6241], // 4个桥梁场景
             road: [89.36, 87.82, 92.30, 89.94, 85.79, 72.05] // 6个路面场景
@@ -1467,7 +1632,7 @@
         };
         
         // Calculate averages
-        const models = ['Frontier-A1-VL(AR Agent)', 'Qwen2.5-VL-7B', 'Qwen2.5-VL-32B'];
+        const models = ['TermiBrain0-VL(AR Agent)', 'Qwen2.5-VL-7B', 'Qwen2.5-VL-32B'];
         const trafficAvg = models.map(model => calculateAverage(trafficData[model].traffic));
         const bridgeAvg = models.map(model => calculateAverage(trafficData[model].bridge));
         const roadAvg = models.map(model => calculateAverage(trafficData[model].road));
@@ -1597,22 +1762,22 @@
         // 准备数据 (根据表格中的实际交通场景数据更新)
         const trafficRadarData = [
           {
-            name: 'Frontier-A1-VL(AR Agent)',
+            name: 'TermiBrain0-VL(AR Agent)',
             value: [72.60, 72.60, 84.6, 91.17, 88.17, 70.76, 86.01, 73.20, 91.32, 64.43, 89.21, 97.50, 79.21, 
                     83.10, 58.6515, 56.5816, 49.6241, 89.36, 87.82, 92.30, 89.94, 85.79, 72.05]
           },
           {
-            name: 'Frontier-A1-VL(AR SFT v3)',
+            name: 'TermiBrain0-VL(AR SFT v3)',
             value: [24.21, 38.17, 84.6, 34.99, 78.26, 26.68, 26.19, 9.83, 55.19, 32.60, 33.35, 89.66, 20.48, 
                     10.62, 1.67, 24.28, 12.67, 64.60, 53.90, 60.73, 82.05, 42.81, 0.27]
           },
           {
-            name: 'Frontier-A1-VL(AR SFT v2)',
+            name: 'TermiBrain0-VL(AR SFT v2)',
             value: [24.41, 9.29, 69.2, 30.98, 82.61, 58.79, 13.10, 8.19, 44.37, 17.34, 26.12, 13.30, 12.20, 
                     18.18, 3.89, 23.06, 17.40, 61.75, 39.30, 21.26, 79.64, 62.46, 0.00]
           },
           {
-            name: 'Frontier-A1-VL(AR SFT)',
+            name: 'TermiBrain0-VL(AR SFT)',
             value: [2.43, 1.79, 69.2, 12.68, 71.74, 16.30, 28.57, 3.79, 15.00, 10.65, 14.50, 1.32, 7.89, 
                     7.54, 3.33, 20.83, 10.67, 8.57, 3.70, 13.42, 55.46, 22.11, 0.00]
           },
@@ -1663,7 +1828,7 @@
             trigger: 'item'
           },
           legend: {
-            data: ['Frontier-A1-VL(AR Agent)', 'Frontier-A1-VL(AR SFT v3)', 'Frontier-A1-VL(AR SFT v2)', 'Frontier-A1-VL(AR SFT)', 'Qwen2.5-VL-7B', 'Qwen2.5-VL-32B', 'FUDOKI-1.5B', 
+            data: ['TermiBrain0-VL(AR Agent)', 'TermiBrain0-VL(AR SFT v3)', 'TermiBrain0-VL(AR SFT v2)', 'TermiBrain0-VL(AR SFT)', 'Qwen2.5-VL-7B', 'Qwen2.5-VL-32B', 'FUDOKI-1.5B', 
                    'Cosmos-Reason1-7B', 'BAGEL-7B-MOT', 'InternVL3-9B', 'GLM-4.1V-9B-Thinking', 'Gemini-2.5-Pro', 'Qwen-VL-Plus(阿里专供)'],
             orient: 'vertical',
             right: '2%',
@@ -1702,9 +1867,9 @@
               },
               itemStyle: {
                 color: [
-                  '#B22222', // Frontier-A1-VL(AR SFT v3) - 火砖红
-                  '#9370DB', // Frontier-A1-VL(AR SFT v2) - 中紫色
-                  '#4169E1', // Frontier-A1-VL(AR SFT) - 皇家蓝
+                  '#B22222', // TermiBrain0-VL(AR SFT v3) - 火砖红
+                  '#9370DB', // TermiBrain0-VL(AR SFT v2) - 中紫色
+                  '#4169E1', // TermiBrain0-VL(AR SFT) - 皇家蓝
                   '#708090', // Qwen2.5-VL-7B - 石板灰
                   '#FF8C00', // Qwen2.5-VL-32B - 深橙色
                   '#DC143C', // FUDOKI-1.5B - 深红色
@@ -1750,7 +1915,7 @@
         
         // Calculate average scores for each category
         const energyData = {
-          'Frontier-A1-VL(AR Agent)': {
+          'TermiBrain0-VL(AR Agent)': {
             pipeline: [93.93, 32.73, 81.72, 97.67, 66.67], // 管道漏油、管道裸露、打孔盗油、管道占压、沿线塌方
             wellsite: [99.02, 88.60, 70.93, 33.90, 93.33, 92.30, 8.24, 81.38, 57.07, 41.61, 82.07, 75.16], // 磕头机检测、驴头检测、磕头机减速箱、磕头机保温箱、储油罐检测、井场驴头抽停、井场盘根漏油、井场井口池漏油、井场火焰检测、井场烟雾检测、井场人员侵入、井场车辆侵入
             station: [57.07, 41.61, 82.07, 75.16] // 场站火焰检测、场站烟雾检测、场站人员侵入、场站车辆侵入
@@ -1768,7 +1933,7 @@
         };
         
         // Calculate averages
-        const models = ['Frontier-A1-VL(AR Agent)', 'Qwen2.5-VL-7B', 'Qwen2.5-VL-32B'];
+        const models = ['TermiBrain0-VL(AR Agent)', 'Qwen2.5-VL-7B', 'Qwen2.5-VL-32B'];
         const pipelineAvg = models.map(model => calculateAverage(energyData[model].pipeline));
         const wellsiteAvg = models.map(model => calculateAverage(energyData[model].wellsite));
         const stationAvg = models.map(model => calculateAverage(energyData[model].station));
@@ -1896,15 +2061,15 @@
         // 准备数据
         const energyRadarData = [
           {
-            name: 'Frontier-A1-VL(AR Agent)',
+            name: 'TermiBrain0-VL(AR Agent)',
             value: [88.60, 81.72, 66.67, 93.33, 32.73, 93.93, 97.67, 99.02, 70.93, 33.90, 57.07, 82.07, 41.61, 75.16, 57.07, 81.38, 8.24, 82.07, 41.61, 75.16, 92.30] // 更新后的数据
           },
           {
-            name: 'Frontier-A1-VL(AR SFT v2)',
+            name: 'TermiBrain0-VL(AR SFT v2)',
             value: new Array(21).fill(0) // 暂无数据
           },
           {
-            name: 'Frontier-A1-VL(AR SFT)',
+            name: 'TermiBrain0-VL(AR SFT)',
             value: [88.60, 81.72, 0, 86.27, 0, 77.58, 60.61, 31.83, 70.93, 0, 47.72, 82.07, 41.61, 66.67, 47.72, 48.17, 0, 82.07, 41.61, 66.67, 0] // 更新后的数据，井场驴头抽停无数据用0
           },
           {
@@ -1950,7 +2115,7 @@
             trigger: 'item'
           },
           legend: {
-            data: ['Frontier-A1-VL(AR Agent)', 'Frontier-A1-VL(AR SFT v2)', 'Frontier-A1-VL(AR SFT)', 'Qwen2.5-VL-7B', 'Qwen2.5-VL-32B', 'FUDOKI-1.5B', 
+            data: ['TermiBrain0-VL(AR Agent)', 'TermiBrain0-VL(AR SFT v2)', 'TermiBrain0-VL(AR SFT)', 'Qwen2.5-VL-7B', 'Qwen2.5-VL-32B', 'FUDOKI-1.5B', 
                    'Cosmos-Reason1-7B', 'BAGEL-7B-MOT', 'InternVL3-9B', 'GLM-4.1V-9B-Thinking', 'Gemini-2.5-Pro', 'Qwen-VL-Plus(阿里专供)'],
             orient: 'vertical',
             right: '2%',
@@ -1989,9 +2154,9 @@
               },
               itemStyle: {
                 color: [
-                  '#DC143C', // Frontier-A1-VL(AR Agent) - 深红色
-                  '#8B008B', // Frontier-A1-VL(AR SFT v2) - 深洋红紫
-                  '#4682B4', // Frontier-A1-VL(AR SFT) - 钢蓝色
+                  '#DC143C', // TermiBrain0-VL(AR Agent) - 深红色
+                  '#8B008B', // TermiBrain0-VL(AR SFT v2) - 深洋红紫
+                  '#4682B4', // TermiBrain0-VL(AR SFT) - 钢蓝色
                   '#696969', // Qwen2.5-VL-7B - 暗灰色
                   '#FF7F50', // Qwen2.5-VL-32B - 珊瑚橙
                   '#B22222', // FUDOKI-1.5B - 火砖红
