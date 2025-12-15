@@ -16,6 +16,7 @@
   --accent-purple: #8b5cf6;
   --accent-cyan: #06b6d4;
   --glow: 0 0 20px rgba(220, 38, 38, 0.3);
+  --primary-font: #044398;
 }
 
 * { box-sizing: border-box; }

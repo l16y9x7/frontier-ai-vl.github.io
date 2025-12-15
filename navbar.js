@@ -39,8 +39,8 @@ class Navbar {
       <header>
         <div class="container nav">
           <div class="brand">
-            <img src="./image.png" alt="TermiBrain0-VL Logo" style="width: 40px; height: 40px; margin-right: 12px;">
-            <span style="font-weight: 700; font-size: 18px; color: var(--primary-red);">TermiBrain0-VL</span>
+            <img src="./logo.png" alt="TermiBrain0-VL Logo" style="width: 40px; height: 40px; margin-right: 12px;">
+            <span style="font-weight: 700; font-size: 18px; color: var(--primary-font);">TermiBrain0-VL</span>
           </div>
           <nav class="tabs" id="tabs"></nav>
           <div class="row">
